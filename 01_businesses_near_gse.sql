@@ -12,3 +12,11 @@
 */
 
 select ...
+
+
+SELECT *
+FROM business_licenses WHERE opa_owner not like "Trustees of"
+ORDER BY the_geom <-> ST_Distance(39.95331187942166, -75.19702366652584)
+
+
+
