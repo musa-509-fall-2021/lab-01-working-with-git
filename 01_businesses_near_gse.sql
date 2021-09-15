@@ -14,3 +14,5 @@
 SELECT ST_Distance(geom, 'SRID=3005;POINT(39.95327 -75.19723)'::geometry) as d, opa_owner,
 FROM business_licenses
 ORDER BY d limit 10
+
+#this did not work
