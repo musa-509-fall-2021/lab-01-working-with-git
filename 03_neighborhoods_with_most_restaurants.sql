@@ -9,7 +9,13 @@
 */
 
 with business_annotated_with_neighborhood as (
-    select ...
+  SELECT nbh.name neighborhood_name, bns.*
+  FROM business_licenses bns
+  INNER JOIN neighborhoods_philadelphia nbh 
+  ON ST_Contains(nbh.the_geom, bns.the_geom)
 )
 
-select ...
+select neighborhood_name, count(*)
+from business_annotated_with_neighborhood
+where licensetyp = 'Food Preparing and Serving'
+group by 1 order by 2 desc
