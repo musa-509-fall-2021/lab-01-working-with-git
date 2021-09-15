@@ -3,20 +3,20 @@
 ## Steps
 1. **Fork** this repository to your account
 2. **Clone** your fork to your computer
-  * Requires you to install `git`
-  * Could use a [GUI](https://desktop.github.com/) or a [CLI](https://github.com/git-guides/install-git)
+    * Requires you to install `git`
+    * Could use a [GUI](https://desktop.github.com/) or a [CLI](https://github.com/git-guides/install-git)
 3. Import datasets from [OpenDataPhilly](https://opendataphilly.org/) into Carto
-  * Licenses and Inspections Business Licenses (maintained by the City of Philadelphia)
-  * Philadelphia Neighborhoods (maintained by Azavea)
-  * (optional) PWD Stormwater Billing Parcels (maintained by the City of Philadelphia)
+    * Licenses and Inspections Business Licenses (maintained by the City of Philadelphia)
+    * Philadelphia Neighborhoods (maintained by Azavea)
+    * (optional) PWD Stormwater Billing Parcels (maintained by the City of Philadelphia)
 4. Explore the data sets
-  - How many business licenses in total?
-  - How many businesses with a null geometry?
-  - What are all of the types of business licenses?
-  - How many neighborhoods are there in this dataset?
-  - Any fields appropriate to use as a unique key for neighborhoods?
+    - How many business licenses in total?
+    - How many businesses with a null geometry?
+    - What are all of the types of business licenses?
+    - How many neighborhoods are there in this dataset?
+    - Any fields appropriate to use as a unique key for neighborhoods?
 5. Fill in the 3 queries in this repository.
-  * **Commit** each file to your local repository as you fill it out.
+    * **Commit** each file to your local repository as you fill it out.
 6. **Push** your code to your repository on GitHub and submit a **Pull Request** back to the original repo.
 
 ## Definitions
