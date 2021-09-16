@@ -6,4 +6,7 @@
   another:https://postgis.net/docs/ST_Contains.html
 */
 
-select ...
+select n.name, b.*
+from phl_business_licenses as b
+join phl_neighborhoods as n
+    on st_contains(n.the_geom, b.the_geom)
