@@ -11,4 +11,12 @@
   The latter should be used if getting distances for ORDER BY.
 */
 
-select ...
+SELECT *  FROM public.business_licenses
+where opa_owner not like 'THE TRUSTEES %'
+Order by the_geom <-> 'SRID=4326;POINT(-75.19723 39.9556)'::geometry
+limit 5
+
+SELECT *  FROM public.business_licenses
+where opa_owner not like 'THE TRUSTEES %'
+Order by the_geom <-> ST_setsrid(ST_MAKEPOINT(-75.19723, 39.9556), 4326)
+limit 5
