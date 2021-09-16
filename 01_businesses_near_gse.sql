@@ -11,4 +11,8 @@
   The latter should be used if getting distances for ORDER BY.
 */
 
-select ...
+select *
+from phl_business_licenses
+where not (legalname like '%UNIV%' and legalname like '%TRUS%')
+order by the_geom <-> st_setsrid(st_makepoint(-75.1972559094429, 39.95324269431504), 4326)
+limit 5
